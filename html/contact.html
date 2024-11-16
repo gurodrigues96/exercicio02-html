@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contato</title>
+    </head>
+    <body>
+        <!-- Menu de navegação -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="modelos.html">Modelos Atuais</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo principal da página -->
+        <header>
+            <h1>Entre em Contato</h1>
+        </header>
+        <main>
+            <h2>Formulário de Contato</h2>
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required /><br /><br />
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                /><br /><br />
+
+                <label for="message">Mensagem:</label><br />
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    cols="50"
+                    required
+                ></textarea
+                ><br /><br />
+
+                <label for="gpu">Modelo de Interesse:</label>
+                <select id="gpu" name="gpu">
+                    <option value="rtx4090">RTX 4090</option>
+                    <option value="rx7900">RX 7900 XTX</option>
+                    <option value="arcA770">Arc A770</option></select
+                ><br /><br />
+
+                <input type="submit" value="Enviar" />
+            </form>
+        </main>
+    </body>
+</html>
